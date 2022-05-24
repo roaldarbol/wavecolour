@@ -25,5 +25,26 @@ rgb_pal <- sapply(wavelengths, wavelength_to_rgb)
 ```
 ![image](https://github.com/roaldarbol/wavecolour/blob/main/man/figures/palette.png)
 
+```r
+library(ggplot2)
+library(dplyr)
+library(wavecolour)
+
+# Create data
+wavl <- seq(from = 300, to = 790, length.out = 500)
+wavl_sin <- sin((wavl * pi) / (180)) + 1.5
+wavl <- bind_cols(wavl, wavl_sin)
+names(wavl) <- c("wavelength", "intensity")
+
+# Create plot
+ggplot(wavl, aes(wavelength, intensity)) +
+  geom_segment(aes(xend=wavelength, yend=0, colour = wavelength), size = 1) +
+  geom_line() +
+  scale_colour_wavelength() +
+  theme_minimal()
+```
+![image](https://github.com/roaldarbol/wavecolour/blob/main/man/figures/wavelengths.png)
+
+
 ## Acknowledgements
 Adapted from [Noah's Python implementation](http://noah.org/wiki/Wavelength_to_RGB_in_Python), who adapted from [Dan Bruton's Fortran implementation](http://www.physics.sfasu.edu/astro/color/spectra.html).
