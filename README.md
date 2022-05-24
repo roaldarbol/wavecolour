@@ -22,7 +22,7 @@ Additionally, it supplies a colour palette which can be used with `ggplot2` as:
   - `scale_colour_wavelength()` / `scale_color_wavelength()`
   - `scale_fill_wavelength()`
 
-
+The scales are opinionated, and will return black for anything outside the visible spectrum (380 to 750). If you just need a palette with these colours, the `rainbow` palette is the way to go - however, I would highly advise you to choose a better alternative, e.g. `viridis`.
 ## Examples
 ```r
 # Create single colour
