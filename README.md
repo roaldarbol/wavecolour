@@ -13,7 +13,17 @@ devtools::install_github("roaldarbol/wavecolour")
 ```
 
 ## Usage
-`wavecolour` supplies 3 functions. The main function is `wavelength_to_hex()`, which converts a visible wavelength into a hex code. Similarly, `wavelength_to_rgb()` converts to RGB and `rgb_to_hex()` does what it says. 
+`wavecolour` supplies 3 low-level functions for converting wavelengths into colour codes:
+  - `wavelength_to_hex()`
+  - `wavelength_to_rgb()`
+  - `rgb_to_hex()`
+
+Additionally, it supplies a colour palette which can be used with `ggplot2` as:
+  - `scale_colour_wavelength()` / `scale_color_wavelength()`
+  - `scale_fill_wavelength()`
+
+
+## Examples
 ```r
 # Create single colour
 col <- wavelength_to_hex(560)
