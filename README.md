@@ -1,4 +1,4 @@
-# wavecolour 🌈
+# 🌈 Wavecolour
 ![GitHub R package version](https://img.shields.io/github/r-package/v/roaldarbol/wavecolour)
 ![GitHub](https://img.shields.io/github/license/roaldarbol/wavecolour?color=blue&label=License)
 
