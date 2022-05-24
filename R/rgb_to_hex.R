@@ -1,11 +1,11 @@
 #' RGB to Hex
 #'
-#' @param RGB
+#' @param RGB 3 element vector of RGB values
 #'
-#' @return
+#' @importFrom grDevices rgb
+#'
+#' @return Hex code
 #' @export
-#'
-#' @examples
 #'
 rgb_to_hex <- function(RGB){
   rgb(RGB[1], RGB[2], RGB[3], maxColorValue = 255)

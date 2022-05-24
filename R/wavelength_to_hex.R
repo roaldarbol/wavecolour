@@ -1,12 +1,10 @@
 #' Wavelength to Hex
 #'
-#' @param wavelength
-#' @param gamma
+#' @param wavelength Wavelength in nm
+#' @param gamma Gamma
 #'
-#' @return
+#' @return Hex code
 #' @export
-#'
-#' @examples
 #'
 wavelength_to_hex <- function(wavelength, gamma=0.8){
   RGB <- wavelength_to_rgb(wavelength, gamma)

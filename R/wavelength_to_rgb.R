@@ -1,12 +1,10 @@
 #' Wavelength to RGB
 #'
-#' @param wavelength
-#' @param gamma
+#' @param wavelength Wavelength in nm
+#' @param gamma Gamma
 #'
-#' @return
+#' @return RGB values
 #' @export
-#'
-#' @examples
 #'
 wavelength_to_rgb <- function(wavelength, gamma=0.8){
 
