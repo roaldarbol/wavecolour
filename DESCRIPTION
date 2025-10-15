@@ -2,8 +2,14 @@ Package: wavecolour
 Type: Package
 Title: HEX VALUES FOR VISIBLE WAVELENGTHS
 Version: 0.1.0
-Author: Mikkel Roald-Arbøl
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: 
+    person(
+      "Mikkel", 
+      "Roald-Arbøl", 
+      role = c("aut", "cre"), 
+      email = "aniprocess.fi28v@passmail.com",
+      comment = c(ORCID = "0000-0002-9998-0058")
+      )
 Description: Converts wavelength in the range of 380 nm through 750 nm to hex codes.
 License: MIT + file LICENSE
 Encoding: UTF-8
